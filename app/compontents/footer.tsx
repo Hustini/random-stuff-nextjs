@@ -1,13 +1,14 @@
 import React from "react";
+import Head from "next/head";
 
 
 
 const footer = () => {
     return(
         <div>
-            <head>
+            <Head>
                 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-            </head>
+            </Head>
             <footer className="bg-gray-100 text-white py-10">
                 <div className="container mx-auto text-center">
                     <div className="flex justify-center space-x-4 mb-8">
