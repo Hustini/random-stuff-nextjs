@@ -9,6 +9,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 @layer utilities {
