@@ -8,6 +8,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  margin-bottom: 50px;
 }
 
 @layer utilities {
