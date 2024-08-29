@@ -21,13 +21,13 @@ const ProjectsCard: React.FC = () => {
                             className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
                             type="submit">✕</button>
                     </form>
-                    <div className="flex flex-row">
+                    <div className="flex flex-col lg:flex-row">
                         <div className="flex justify-center flex-shrink-0">
                             <Image className="rounded-[20px]" src={"/img/games.png"} alt={"this is a placeholder"} width={200} height={200} />
                         </div>
                         <div className="pl-4">
-                            <h3 className="font-bold text-lg">Hello!</h3>
-                            <p className="py-4 text-justify">
+                            <h3 className="font-bold text-xl sm:text-lg">Hello!</h3>
+                            <p className="py-4 text-justify sm:text-base">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                             </p>
                         </div>
