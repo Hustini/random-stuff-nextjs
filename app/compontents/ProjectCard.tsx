@@ -13,8 +13,8 @@ const ProjectsCard: React.FC = () => {
     return (
         <>
             <button className="btn bg-violet-100 p-4 rounded-[20px] hover:bg-violet-300" onClick={openModal}>Open Modal</button>
-            <dialog id="my_modal_3" className="modal w-2/3 h-3/7">
-                <div className="modal-box rounded-[20px] p-4">
+            <dialog id="my_modal_3" className="modal w-2/3 h-3/7 rounded-[20px] bg-indigo-50">
+                <div className="modal-box p-4">
                     <form method="dialog">
                         {/* If there is a button in form, it will close the modal */}
                         <button
@@ -23,7 +23,7 @@ const ProjectsCard: React.FC = () => {
                     </form>
                     <div className="flex flex-row">
                         <div className="flex justify-center flex-shrink-0">
-                            <Image src={"/img/games.png"} alt={"this is a placeholder"} width={200} height={200} />
+                            <Image className="rounded-[20px]" src={"/img/games.png"} alt={"this is a placeholder"} width={200} height={200} />
                         </div>
                         <div className="pl-4">
                             <h3 className="font-bold text-lg">Hello!</h3>
