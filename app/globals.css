@@ -12,6 +12,12 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: visible;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
