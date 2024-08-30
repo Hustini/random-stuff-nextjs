@@ -9,8 +9,9 @@ export default function Home() {
         <NavBar />
         <h1 className='text-center text-2xl text-gray-800 m-10 px-2.5'>Welcome to my experimental playground! Here, I test out random ideas, explore new features, and experiment with Next.js. Feel free to browse around and see what I am working on. Enjoy the journey!</h1>
         <RawCss />
-        <div className="flex flex-col items-center justify-center w-full m-4">
-            <ProjectCard />
+        <div className="flex flex-row items-center justify-center w-full m-4 gap-4">
+            <ProjectCard buttonText={"Project 1"} />
+            <ProjectCard buttonText={"Project 2"}/>
         </div>
         <Footer />
     </main>
