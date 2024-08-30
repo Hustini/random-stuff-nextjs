@@ -16,7 +16,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({ buttonText }) => {
 
     return (
         <div>
-            <button className="btn bg-violet-100 p-4 rounded-[20px] hover:bg-violet-300 hover:p-6" onClick={openModal}>
+            <button className="btn bg-violet-100 p-4 rounded-[20px] hover:bg-violet-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-3000" onClick={openModal}>
                 <Image className="rounded-[20px]" src={"/img/games.png"} alt={"placeholder"} height={300} width={300} />
                 {buttonText}
             </button>
