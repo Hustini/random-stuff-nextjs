@@ -2,7 +2,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ProjectsCard: React.FC = () => {
+interface ProjectsCardProps {
+    buttonText: string;
+}
+
+const ProjectsCard: React.FC<ProjectsCardProps> = ({ buttonText }) => {
     const openModal = () => {
         const modal = document.getElementById('my_modal_3') as HTMLDialogElement;
         if (modal) {
@@ -11,8 +15,11 @@ const ProjectsCard: React.FC = () => {
     };
 
     return (
-        <>
-            <button className="btn bg-violet-100 p-4 rounded-[20px] hover:bg-violet-300" onClick={openModal}>Open Modal</button>
+        <div>
+            <button className="btn bg-violet-100 p-4 rounded-[20px] hover:bg-violet-300 hover:p-6" onClick={openModal}>
+                <Image className="rounded-[20px]" src={"/img/games.png"} alt={"placeholder"} height={300} width={300} />
+                {buttonText}
+            </button>
             <dialog id="my_modal_3" className="modal w-2/3 h-3/7 rounded-[20px] bg-indigo-50">
                 <div className="modal-box p-4">
                     <form method="dialog">
@@ -34,7 +41,7 @@ const ProjectsCard: React.FC = () => {
                     </div>
                 </div>
             </dialog>
-        </>
+        </div>
     );
 };
 
