@@ -9,13 +9,6 @@
 body {
   color: rgb(var(--foreground-rgb));
   margin-bottom: 50px;
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    overflow: visible;
-  }
 }
 
 @layer utilities {
